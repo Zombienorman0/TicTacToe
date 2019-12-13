@@ -8,6 +8,7 @@ String X = "X ";
 String O = "O ";
 String quit;
 color darkerd = #C407EA;
+String darkMode = "Dark Mode";
 
 void textSetup() {
 }
@@ -43,4 +44,8 @@ void textDraw() {
   textAlign(CENTER, CENTER);
   textFont(titleFont, 25);
   text(O, 415, 650, 40, 35);
+  
+  textAlign(CENTER, CENTER);
+  textFont(titleFont, 20);
+  text(darkMode, width*3.8/numberOfButtons+buttonPaddingX, menuY, menuWidth*1/numberOfButtons-2*buttonPaddingX, menuHeight/2);
 }
